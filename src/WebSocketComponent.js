@@ -22,7 +22,7 @@ const WebSocketComponent = () => {
   const [dataPoints, setDataPoints] = useState([]);
 
   useEffect(() => {
-    const socket = new WebSocket("ws://192.168.94.192:81"); // Change to your ESP32 IP
+    const socket = new WebSocket("ws://192.168.245.192:81"); // Change to your ESP32 IP
 
     socket.onopen = () => setStatus("🟢 Connected");
     socket.onclose = () => setStatus("🔴 Disconnected");
